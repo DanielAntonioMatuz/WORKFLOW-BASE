@@ -1,0 +1,303 @@
+* {
+    font-family: atten-round-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.m-t-25 {
+    margin-top: 20px;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.container-main { 
+    width: 95%;
+    height: 85vh;
+    border-radius: 25px;
+}
+
+.color-main {
+    background-color: rgba(0, 0, 0, 0.144)
+}
+
+.ui-navbar-v {
+    width: 80px;
+}
+
+.buttom-nav {
+    width: auto;
+    padding: 0px 10px 10px 10px;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px; 
+    margin-left: 10px;
+}
+
+.fix-search {
+    margin-left: 105px; 
+    position: absolute;
+}
+
+.buttom-nav p {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.form-desing-1 {
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    background-color: #fff;
+    outline: none!important;
+
+}
+
+.buttom-search {
+    background-color: #f1f1f1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -10px;
+    color: black;
+}
+
+.notify {
+    float:right;
+    width:auto;
+    height:40px;
+    margin-right: 20px;
+}
+
+.notify-bell {
+    width: 25px;
+    height:25px;
+}
+
+.d-nav {
+    height: 30px;
+    width: 30px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.item-s {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.section-f {
+    margin-left: 55px;
+}
+
+.item-f {
+    height: 25px;
+    width: 25px;
+    margin-left: 30px;
+}
+
+.bkg-b {
+    margin-top: -15px;
+    padding-top: 15px;
+    border-right: 2px solid black;
+}
+
+.select-filter {
+    margin-left: 10px;
+    margin-top: -12px;
+    z-index: 10;
+}
+
+.color-pr {
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.profile-background {
+    width: 90%;
+    height: 340px;
+    background-color: black;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 3px solid black;
+}
+
+.profile-id-professional {
+    width: 90%;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.335);
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.university-id {
+    width: 150px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 0px!important;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text-pro {
+    font-size: 60px;
+}
+
+.item-sidebar {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+  
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+  
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+  
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+    .fix-search {display:none}
+}
+  
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .fix-search {display:none}
+}
+
+@media screen and (max-width: 1024px) {
+    .fix-search {display: none!important;}
+    .notify {display:none}
+    .text-pro {font-size: 30px}
+}
+
+@media screen and (max-width: 1366px) {
+    .text-pro {font-size: 30px}
+    .profile-id-professional {height: 180px}
+}
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar-b {
+    background-color: #f1f1f1;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: -10;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar-b a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar-b a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a green background color to the active link */
+  .navbar-b a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the navbar on small screens */
+  .navbar-b .icon {
+    display: none;
+  }
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+    .navbar-b a:not(:first-child) {display: none;}
+    .navbar-b a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .navbar-b.responsive a.icon {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .navbar-b.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
