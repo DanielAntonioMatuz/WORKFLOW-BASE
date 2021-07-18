@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/x-icon" href="./assets/img/ico.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FirstFlow - A great work for students</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,10 +40,11 @@
                 </a>
             </div>
 
-            <div class="notify dropstart">
+            <div class="notify  dropstart">
                 <div class="p-2 btn" data-bs-toggle="dropdown" aria-expanded="false">
-                    <svg class="notify-bell text-light" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                         fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <svg class="notify-bell text-light bi bi-bell" xmlns="http://www.w3.org/2000/svg" width="16"
+                         height="16"
+                         fill="currentColor" viewBox="0 0 16 16">
                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
                     </svg>
                 </div>
@@ -76,8 +76,9 @@
         <div class="sidebar color-01">
             <div class="item-sidebar">
                 <div class="btn home">
-                    <svg class="d-nav box-btn color-03" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                         fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <svg class="d-nav box-btn color-03 bi bi-house" xmlns="http://www.w3.org/2000/svg" width="16"
+                         height="16"
+                         fill="currentColor" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                               d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                         <path fill-rule="evenodd"
@@ -85,17 +86,17 @@
                     </svg>
                 </div>
 
-                <div class="btn search" data-bs-toggle="modal" data-bs-target="#search">
-                    <svg class="d-nav box-btn color-03" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                         fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <div class="btn search">
+                    <svg class="d-nav box-btn color-03 bi bi-search" xmlns="http://www.w3.org/2000/svg" width="16"
+                         height="16"
+                         fill="currentColor" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                     </svg>
                 </div>
-                
 
                 <div class="btn profile">
-                    <svg class="d-nav box-btn color-03" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                         fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" class="bi bi-person d-nav box-btn color-03" viewBox="0 0 16 16">
                         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                     </svg>
                 </div>
@@ -103,45 +104,20 @@
         </div>
     </div>
 
-    <!-- Modal search -->
-    <div class="modal fade" id="search" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content color-search mx-auto">
-
-            <p class="h3 text-light mb-3">Buscar en FirstFlow</p>
-
-            <p class="h6 text-light fw-light mb-3">Algunas sugerencias:</p>
-
-            <div class="flex-c text-center mx-auto mb-2">
-                <div class="tags btn">Software</div>
-                <div class="tags btn">UI/UX</div>
-                <div class="tags btn">Mecatrónico</div>
-                <div class="tags btn">Biomédico</div>
-                <div class="tags btn">Manufactura</div>
-            </div>
-
-            <form>
-                <input type="search" class="search-panel" placeholder="Buscar un estudiante diseñador, software, etc">
-            </form>
-            <button class="btn color-03 text-light text-center mx-auto" style="width: 220px;">Buscar</button>
-        
-          </div>
-        </div>
-    </div>
-
-
     <div class="navbar-b color-01" id="myNavbar" style="z-index: 1; padding-top: 2px;">
         <div class="btn settings p-3 flex">
-            <svg class="item-s text-light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                 class="bi bi-gear" viewBox="0 0 16 16">
+            <svg class="item-s text-light bi bi-gear" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                 fill="currentColor"
+                 viewBox="0 0 16 16">
                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
             </svg>
 
             <div class="flex section-f btn bkg-b text-light">
                 <h5>Filtros</h5>
-                <svg class="item-f" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                     class="bi bi-sliders" viewBox="0 0 16 16">
+                <svg class="item-f bi bi-sliders" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     fill="currentColor"
+                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                           d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
                 </svg>
@@ -185,101 +161,107 @@
     </div>
 </div>
 
-<section class="w-100 m-t-25">
-    <div class="w-90 mx-auto">
-        <div class="color-main bkg-img container-main mx-auto">
-            <div class="cover">
-                <div class="row">
-                    <div class="col-5 m-t-25">
-                        <div class="mx-auto">
-                            <div class="profile-background color-03-txt mx-auto bkg-img"
-                                 style="background-image: url('./assets/img/profile.jpg');"></div>
-                            <!-- <div class="profile-image mx-auto bkg-img" style="background-image: url('./assets/img/profile.jpg');"></div> -->
-                            <div class="name-profile text-center h3 m-t-25 title color-main mx-auto text-light ">
-                                <p class="fw-bold">Daniel Matuz Alvarado</p>
-                                <div class="m-t-25">
-                                    <p class="university-id">Universidad Politécnica de Chiapas</p>
-                                </div>
-                            </div>
+<section style="margin-left: 80px;" class="cover-f fix-w ">
 
-                            <div class="bkg-color-01 values color-01-c mx-auto">
-                                <div class="row">
-                                    <div class="col-6 m-t-25 text-center">
-                                        <span class="fw-bold text-light">Proyectos</span>
-                                        <p class="fw-light text-light">10</p>
-                                    </div>
+    <div class="container-over-y-p">
+        <div class="flex-c body-info color-01-c">
+            <div class="bkg-img img-body-info" style="background-image: url('./assets/img/profile.jpg');"></div>
+            <div>
+                <p class="name-user h3 fw-bold text-light">Daniel Matuz Alvarado</p>
+                <p class="professional-name h5 text-light">Ing. desarrollo de software</p>
+            </div>
+        </div>
+        <div class="title" style="background-color: transparent!important;">
+            <p class="h3 m-t-25 fw-bold text-light p-3" style="margin-bottom: -10px; margin-top: 0px;">
+                Experiencia
+            </p>
+        </div>
 
-                                    <div class="col-6 m-t-25 text-center">
-                                        <span class="fw-bold p-l-10 text-light"
-                                              style="padding-right: 10px;">Carrera</span>
-                                        <p class="fw-light p-l-10 text-light">Ing. desarrollo de software</p>
-                                    </div>
-                                </div>
-                            </div>
+        <section class="flex-c fix-w justify-content-center container-over-y scroll-active" style="width: auto!important; z-index: 1400; margin-bottom: 50px">
 
-                            <div class="description m-t-25 text-justify values color-main mx-auto text-light">
-                                <p>Soy estudiante de Ingeniería en desarrollo de software, de 9no cuatrimestre con gran
-                                    experiencia en desarrollo de productos interactivos, diseño de UI y UX,
-                                    me apasiona el enfoque del diseño y me identifico con el rol de Front End
-                                </p>
-                            </div>
+            <section id="timeline">
 
-                        </div>
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url('./assets/img/background.jpg')"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 fw-bold " style="font-size: 60px!important;">2016</p>
                     </div>
-                    <div class="col-7">
-                        <div class="title color-main">
-                            <p class="h3 m-t-25 text-light">
-                                Flow <span class="fw-bold">S P A C E</span>
-                            </p>
-                        </div>
 
-                        <div class="flex-c m-t-25 mx-auto container-over-y">
-
-                            <div class=" card-info-user-xl color-lg-03">
-                                <div class="btn bkg-img"
-                                     style="width: 100%; height: 100%; background-image: url('./assets/img/undraw_blank_canvas_3rbb.svg');">
-                                </div>
-                                <div class="bkg-img position-bottom">
-                                    <p class="p-4 h1 text-light">Mis proyectos</p>
-                                </div>
-                            </div>
-
-                            <div class="card-info-user color-lg-01">
-                                <div class="btn bkg-img"
-                                     style="width: 100%; height: 100%; background-image: url('./assets/img/undraw_professor_8lrt.svg');">
-                                </div>
-                                <div class="bkg-img position-bottom">
-                                    <p class="p-4 h1 text-light">Mis Habilidades</p>
-                                </div>
-                            </div>
-
-                            <div class="card-info-user color-lg-02">
-                                <div class="btn bkg-img"
-                                     style="width: 100%; height: 100%; background-image: url('./assets/img/undraw_Traveling_re_weve.svg');">
-                                </div>
-                                <div class="bkg-img position-bottom">
-                                    <p class="p-4 h1 text-light">Experiencia</p>
-                                </div>
-                            </div>
-
-                            <div class="card-info-user-xl color-lg-04">
-                                <div class="btn bkg-img"
-                                     style="width: 100%; height: 100%; background-image: url('./assets/img/undraw_contact_us_15o2.svg');">
-                                </div>
-                                <div class="bkg-img position-bottom">
-                                    <p class="p-4 h1 text-light">Contacto</p>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="tl-content">
+                        <h1>Lorem ipsum dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                     </div>
+
                 </div>
 
+                <div class="tl-item">
 
-            </div>
+                    <div class="tl-bg" style="background-image: url('./assets/img/profile.jpg')"></div>
 
-        </div>
+                    <div class="tl-year">
+                        <p class="f2 fw-bold " style="font-size: 60px!important;">2017</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+                        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url('./assets/img/background.jpg')"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 fw-bold " style="font-size: 60px!important;">2018</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+                        <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url('./assets/img/profile.jpg')"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 fw-bold " style="font-size: 60px!important;">2019</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+                        <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url('./assets/img/background.jpg')"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 fw-bold " style="font-size: 60px!important;">2020</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1>Lorem ipsum dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
     </div>
+
 </section>
 
 

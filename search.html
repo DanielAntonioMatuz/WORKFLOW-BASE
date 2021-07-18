@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.typekit.net/hwt1mxn.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="color-lg-05">
+
+    <nav class="navbar navbar-light color-01" style="z-index: 1;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-light" href="#">FirstFlow</a>
+
+
+            <div class="mx-auto flex">
+
+            </div>
+
+            <div class="notify dropstart">
+                <div class="p-2 btn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="notify-bell text-light" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                    </svg>
+                </div>
+                <ul class="dropdown-menu notifications mx-auto text-center color-01">
+                    <div class="text-light text-start p-3">
+                        <p class="h3 fw-bold">Tus notificaciones</p>
+                    </div>
+                    <div class="btn body-notify mx-auto ">
+                        <div class="flex">
+                            <div class="bkg-img img-notify"
+                                 style="background-image: url('./assets/img/profile.jpg');"></div>
+                            <div class="text-notify text-start">
+                                <p class="fw-bold">Texto sobre la notificación</p>
+                                <p class="fw-light" style="margin-top: -15px;">Texto sobre la notificación, detalles y
+                                    eventos</p>
+
+                                <p class="date-notify text-end">Viernes, 7:49</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div class="ui-navbar-v" style="z-index: 1;">
+        <div class="sidebar color-01">
+            <div class="item-sidebar">
+                <div class="btn home">
+                    <svg class="d-nav box-btn color-03" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd"
+                              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>
+                </div>
+
+                <div class="btn search" data-bs-toggle="modal" data-bs-target="#search">
+                    <svg class="d-nav box-btn color-03" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </div>
+                
+
+                <div class="btn profile">
+                    <svg class="d-nav box-btn color-03" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                         fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bkg-img mt-5">
+        
+        <div class="card-index-info mx-auto bkg-img-t" style="background-image: url('./assets/img/undraw_Connected_re_lmq2.svg');">
+            <div>
+                <p class="h2 text-center  fw-lighter mt-5">El <span class="fw-bold">increible</span> e ilimitado talento <span class="fw-bold">Joven</span></p>
+                <p class="h5 fw-lighter  text-center">Encuentra increibles <span class="fw-bold">estudiantes</span> entusiastas en todo el <span class="fw-bold">mundo</span></p>
+            </div>
+        
+            <div class="search-main mx-auto text-center mt-5 color-lg-04 w-90">
+                <input placeholder="Buscar increibles talentos estudiantes">
+                <button class="btn btn-s-m text-light color-03">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-4 text-light - text-center">
+            <p class="h3">Estudiantes de las principales áreas</p>
+        </div>
+    
+        <div class="mt-1 mb-5">
+            <div class="mt-3 flex-c mx-auto w-90 justify-content-center">
+                <div class="img-bkg btn card-search color-lg-01 ">
+                    <p class="h6 text-card-search">Software</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">Biomédica</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">Manufactura</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">Mecatrónica</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">Ambiental</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">Financias</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">UI/UX</p>
+                </div>
+                <div class="btn card-search color-lg-01">
+                    <p class="h6 text-card-search">Energías</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="w-75 mx-auto ">
+        <div class="m-lg-5">
+            <p class="h4 text-light">Increibles estudiantes potenciales por conocer</p>
+        </div>
+
+        <div class="flex-c mb-5">
+
+            <div class="card-profile-view flex-c color-lg-06 text-light">
+                <div class="img-view-profile bkg-img" style="background-image: url('./assets/img/profile.jpg');"></div>
+                <div class="w-50 info-view">
+                    <div>
+                        <p class="tags text-md-center color-lg-04 h6 tags-f-v">Software</p>
+                        <p class="h4">Daniel Matuz</p>
+
+                        <div class="description-profile-info w-75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora sapiente tempore voluptas magnam magni eius, hic laudantium error consectetur. Reiciendis quaerat consequatur, quia animi unde dignissimos eius! Nisi, odio.</p>
+                        </div>
+
+                        <button class="btn color-03 text-light w-75">Ver perfil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-profile-view flex-c color-lg-06 text-light">
+                <div class="img-view-profile bkg-img" style="background-image: url('./assets/img/profile.jpg');"></div>
+                <div class="w-50 info-view">
+                    <div>
+                        <p class="tags text-md-center color-lg-04 h6 tags-f-v">Software</p>
+                        <p class="h4">Daniel Matuz</p>
+
+                        <div class="description-profile-info w-75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora sapiente tempore voluptas magnam magni eius, hic laudantium error consectetur. Reiciendis quaerat consequatur, quia animi unde dignissimos eius! Nisi, odio.</p>
+                        </div>
+
+                        <button class="btn color-03 text-light w-75">Ver perfil</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="card-profile-view flex-c color-lg-06 text-light">
+                <div class="img-view-profile bkg-img" style="background-image: url('./assets/img/profile.jpg');"></div>
+                <div class="w-50 info-view">
+                    <div>
+                        <p class="tags text-md-center color-lg-04 h6 tags-f-v">Software</p>
+                        <p class="h4">Daniel Matuz</p>
+
+                        <div class="description-profile-info w-75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora sapiente tempore voluptas magnam magni eius, hic laudantium error consectetur. Reiciendis quaerat consequatur, quia animi unde dignissimos eius! Nisi, odio.</p>
+                        </div>
+
+                        <button class="btn color-03 text-light w-75">Ver perfil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-profile-view flex-c color-lg-06 text-light">
+                <div class="img-view-profile bkg-img" style="background-image: url('./assets/img/profile.jpg');"></div>
+                <div class="w-50 info-view">
+                    <div>
+                        <p class="tags text-md-center color-lg-04 h6 tags-f-v">Software</p>
+                        <p class="h4">Daniel Matuz</p>
+
+                        <div class="description-profile-info w-75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempora sapiente tempore voluptas magnam magni eius, hic laudantium error consectetur. Reiciendis quaerat consequatur, quia animi unde dignissimos eius! Nisi, odio.</p>
+                        </div>
+
+                        <button class="btn color-03 text-light w-75">Ver perfil</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+</html>
